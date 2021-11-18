@@ -6,17 +6,35 @@ body{
 }
 .top-header{
     text-align: center;
-    background: teal;
+    background: black;
     padding: 15px;
-    color: white;
-    border: solid whitesmoke 5px;
+    color: gold;
+    
+    display: flex;
+    
 }
 .heading-content{
     font-size:50px;
+    margin-left: 70px;
+}
+#jlm-logo{
+margin-left: 70px;
 }
 .left-container{
     width: 70%;
     margin-left: 25px;
+}
+#return-main-page{
+    background: black;
+    width: 270px; 
+    text-align: center;
+    color: gold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 200px;    
 }
 #search-form{
     display: flex;
@@ -243,6 +261,8 @@ body{
     background-size: cover;
     padding: 15px;  
 }
+
+
 @media only screen and (max-width:730px){
     .body-container, .city-info-and-weather, .forcast-by-day{
         justify-content: start;

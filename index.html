@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
     <link rel="stylesheet" href="./style/style.css">
-    
-</head>
-<body>
-<div class="main-container">
 
-    <div class="top-header">
-        <h1 class="heading-content">WEATHER FORECAST DASHBOARD</h1>
-    </div>
-    <div class="body-container">
-        <div class="search-history">   
-            <div class="container">
-                <div id="search-form">
-                    <h2 class="city-search">Search for a City</h2>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="top-header">
+            <img id="jlm-logo" src="./jlm-tourism.png" alt="Image" height="100" width="100">
+            <h1 class="heading-content">JLM TOURISM WEATHER FORECAST</h1>
+            <a href="https://jlm-tourism.herokuapp.com/" class="btn" id="return-main-page"> Return to JLM
+                TOURISM</a>
+        </div>
+        <div class="body-container">
+            <div class="search-history">
+                <div class="container">
+                    <div id="search-form">
+                        <h2 class="city-search">Search for a City</h2>
+                    </div>
+                    <div class="city_name">
+                        <input type="text" id="city_input" placeholder="Miami">
+                    </div>
+                    <div class="city-search-btn">
+                        <button type="submit" class="btn" id="search_btn">Search</button>
+                    </div>
                 </div>
-                <div class="city_name" >
-                    <input type="text" id="city_input" placeholder="Miami">
-                </div>
-                <div class="city-search-btn">
-                    <button 
-                    type="submit" class="btn" id= "search_btn"
-                    >Search</button>
+                <hr class="left-container">
+                <div class="city-history" id="city-history">
+
                 </div>
             </div>
-            <hr class="left-container">
-            <div class="city-history" id="city-history">
-                
+            <div class="city-info-and-weather">
+                <div class="daily-weather-display">
+                    <div class="place-timezone">
+                        <div class="current-city" id="current-city">Miami</div>
+                        <div class="time-zone-container">
+                            <div class="time-zone" id="time-zone">North America / USA</div>
+                            <div class="country" id="country">US</div>
+                        </div>
+
+                    </div>
+
+                    <div class="date-time-container">
+                        <div class="time" id="time">
+                            <span id="am-pm"></span>
+                        </div>
+                        <div class="date" id="date">
+                            Monday, 24 May 2021
+                        </div>
+                    </div>
+                    <div class="weather-details" id="weather-condition">
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="city-info-and-weather">
-            <div class="daily-weather-display">
-                <div class="place-timezone">
-                    <div class="current-city" id="current-city">Miami</div>
-                    <div class="time-zone-container">
-                        <div class="time-zone" id="time-zone">North America / USA</div>
-                        <div class="country" id="country">US</div>
-                    </div>
-                    
-                </div>
-                    
-                <div class="date-time-container">
-                    <div class="time" id="time">
-                        <span id="am-pm"></span>
-                    </div>
-                    <div class="date" id="date">
-                        Monday, 24 May 2021                        
-                    </div>
-                </div>
-                <div class="weather-details" id="weather-condition">
-                       
-                </div>                    
-            </div>  
-        </div> 
-    </div>
-    <div class="future-days-forcast">
-      
-        <div class="forcast-heading">Today And Next 7 Days Forcast</div>
-        <div class="forcast-by-day" id="forcast-by-day">
+        <div class="future-days-forcast">
+
+            <div class="forcast-heading">Today And Next 7 Days Forcast</div>
+            <div class="forcast-by-day" id="forcast-by-day">
                 <div class="today" id="current-temp">
                     <div class="today-update">
                         <div class="current-day">Monday</div>
-                        <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather icon" class="w-icon">                        
-                    </div> 
+                        <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather icon" class="w-icon">
+                    </div>
                     <div class="temp">Night - 25.7&#176; F</div>
                     <div class="temp">Day - 35.2&#176; F</div>
                 </div>
-                <div class="weather-forcast" id="weather-forcast">  
+                <div class="weather-forcast" id="weather-forcast">
                     <div class="weather-forcast-item">
                         <div class="day">Tuesday</div>
                         <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
@@ -115,12 +118,15 @@
                         <div class="temp">Day - 35.2&#176; F</div>
                     </div>
                 </div>
-        </div>    
-    </div>    
-</div>    
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script/script.js"></script>
 </body>
+
 </html>
 @ Copyright - Mirza Abdul Awal, Cooper City, Florida, USA
