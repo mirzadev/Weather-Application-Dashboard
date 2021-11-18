@@ -14,11 +14,11 @@ body{
     
 }
 .heading-content{
-    font-size:50px;
-    margin-left: 70px;
+    font-size:40px;
+    margin-left: 50px;
 }
 #jlm-logo{
-margin-left: 70px;
+margin-left: 50px;
 }
 .left-container{
     width: 70%;
@@ -34,7 +34,7 @@ margin-left: 70px;
     margin-left: 25px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 200px;    
+    margin-left: 100px;    
 }
 #search-form{
     display: flex;
